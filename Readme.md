@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [](https://your-solution-url.com)
-- Live Site URL: [](https://your-live-site-url.com)
+- Solution URL: [](https://abuobayeh04.github.io/news-homepage-main/)
+- Live Site URL: [](https://github.com/AbuObayeh04/news-homepage-main)
 
 ## My process
 
