@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | News homepage</title>
+  <!-- Google Fonts "Inter" -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="./src/style.css">
+
+</head>
+
+<body class="bg-stone-50 relative">
+  <div class="menu h-full w-65 absolute top-0 right-0 p-6 transition-width duration-300 hidden md:hidden"
+    style="background-color:hsl(36, 100%, 99%);">
+    <div class="flex justify-end">
+      <img src="../assets/images/icon-menu-close.svg" alt="close" class="icon-close w-8 cursor-pointer mb-20">
+    </div>
+
+    <div class="flex flex-col gap-4">
+      <a class="hover:text-orange-400" href="#">Home</a>
+      <a class="hover:text-orange-400" href="#">New</a>
+      <a class="hover:text-orange-400" href="#">Popular</a>
+      <a class="hover:text-orange-400" href="#">Trending</a>
+      <a class="hover:text-orange-400" href="#">Categories</a>
+    </div>
+  </div>
+
+  <div class="container mx-auto px-4 max-w-7xl">
+    <header class="flex justify-between items-center py-8 ">
+      <img src="../assets/images/logo.svg" alt="logo" class="w-16">
+      <nav class="hidden md:block">
+        <ul class="flex gap-8">
+          <li><a class="text-gray-500 hover:text-orange-400" href="#">Home</a></li>
+          <li><a class="text-gray-500 hover:text-orange-400" href="#">New</a></li>
+          <li><a class="text-gray-500 hover:text-orange-400" href="#">Popular</a></li>
+          <li><a class="text-gray-500 hover:text-orange-400" href="#">Trending</a></li>
+          <li><a class="text-gray-500 hover:text-orange-400" href="#">Categories</a></li>
+        </ul>
+      </nav>
+      <img src="../assets/images/icon-menu.svg" alt="menu" class="menu-icon block md:hidden cursor-pointer">
+    </header>
+
+    <main class="grid md:grid-cols-3 gap-8 mb-16">
+      <div class="md:col-span-2">
+        <div class="mb-8">
+          <img src="../assets/images/image-web-3-desktop.jpg" alt="web3" class="landing-photo w-full">
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-8">
+          <h1 class="text-6xl font-extrabold text-slate-950">The Bright Future of Web 3.0?</h1>
+          <div class="flex flex-col gap-6">
+            <p class="text-gray-500">
+              We dive into the next evolution of the web that claims to put the power of the
+              platforms back into the hands of the people. But is it really fulfilling its promise?</p>
+            <a href="#"
+              class="bg-red-500 text-slate-950 px-8 py-3 uppercase text-sm tracking-[0.2em] hover:bg-slate-950 hover:text-white transition-colors w-fit font-bold">Read
+              more</a>
+          </div>
+        </div>
+      </div>
+
+      <aside class="bg-slate-950 text-white p-8">
+        <h2 class="text-orange-400 text-4xl font-bold mb-8">New</h2>
+
+        <div class="border-b border-gray-600 pb-8 mb-8">
+          <h3 class="text-xl font-bold mb-2 hover:text-orange-400 cursor-pointer">Hydrogen VS Electric Cars</h3>
+          <p class="text-gray-400">Will hydrogen-fueled cars ever catch up to EVs?</p>
+        </div>
+
+        <div class="border-b border-gray-600 pb-8 mb-8">
+          <h3 class="text-xl font-bold mb-2 hover:text-orange-400 cursor-pointer">The Downsides of AI Artistry</h3>
+          <p class="text-gray-400 max-md:text-1xl">What are the possible adverse effects of on-demand AI image
+            generation?</p>
+        </div>
+
+        <div>
+          <h3 class="text-xl font-bold mb-2 hover:text-orange-400 cursor-pointer">Is VC Funding Drying Up?</h3>
+          <p class="text-gray-400">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+        </div>
+      </aside>
+    </main>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      <article class="flex gap-6">
+        <img src="../assets/images/image-retro-pcs.jpg" alt="retro pc" class="w-28 object-cover">
+        <div>
+          <span class="text-4xl font-bold text-orange-400 mb-2 block">01</span>
+          <h3 class="font-extrabold text-lg mb-2 hover:text-orange-400 cursor-pointer">Reviving Retro PCs</h3>
+          <p class="text-gray-500">What happens when old PCs are given modern upgrades?</p>
+        </div>
+      </article>
+
+      <article class="flex gap-6">
+        <img src="../assets/images/image-top-laptops.jpg" alt="top laptops" class="w-28 object-cover">
+        <div>
+          <span class="text-4xl font-bold text-orange-400 mb-2 block">02</span>
+          <h3 class="font-extrabold text-lg mb-2 hover:text-orange-400 cursor-pointer">Top 10 Laptops of 2022</h3>
+          <p class="text-gray-500">Our best picks for various needs and budgets.</p>
+        </div>
+      </article>
+
+      <article class="flex gap-6">
+        <img src="../assets/images/image-gaming-growth.jpg" alt="gaming growth" class="w-28 object-cover">
+        <div>
+          <span class="text-4xl font-bold text-orange-400 mb-2 block">03</span>
+          <h3 class="font-extrabold text-lg mb-2 hover:text-orange-400 cursor-pointer">The Growth of Gaming</h3>
+          <p class="text-gray-500">How the pandemic has sparked fresh opportunities.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+
+  <script src="./src/js/main.js"></script>
+</body>
+
+</html>
