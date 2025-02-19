@@ -2,9 +2,9 @@ const landingPhoto = document.querySelector(".landing-photo");
 
 window.addEventListener("resize", () => {
   if (window.innerWidth < 768) {
-    landingPhoto.src = "../assets/images/image-web-3-mobile.jpg";
+    landingPhoto.src = "./assets/images/image-web-3-mobile.jpg";
   } else {
-    landingPhoto.src = "../assets/images/image-web-3-desktop.jpg";
+    landingPhoto.src = "./assets/images/image-web-3-desktop.jpg";
   }
 });
 
